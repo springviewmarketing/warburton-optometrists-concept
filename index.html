@@ -162,7 +162,7 @@
 
   /* Stats */
   .stats{background:var(--cream)}
-  .stats .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
+  .stats .wrap{display:grid;grid-template-columns:repeat(3,1fr)}
   .stat{padding:72px 28px;border-left:1px solid var(--line)}
   .stat:first-child{border-left:0;padding-left:0}
   .stat .n{font-size:clamp(48px,5.2vw,76px);font-weight:800;letter-spacing:-.05em;line-height:1;color:var(--slate)}
@@ -368,9 +368,6 @@
     .journey .cards .card:last-child{grid-column:1/-1}
     .journey .cards .card:last-child .img{aspect-ratio:16/8}
     .svc-row .svc:last-child{grid-column:1/-1}
-    .stats .wrap{grid-template-columns:1fr 1fr}
-    .stat:nth-child(3){border-left:0;padding-left:0}
-    .stat:nth-child(n+3){border-top:1px solid var(--line)}
     .tech .media{position:static;height:420px}
     .faq .side{position:static}
     .visit .drawing{justify-self:start}
@@ -403,9 +400,9 @@
     .journey .cards,.svc-row{grid-template-columns:1fr}
     .journey .cards .card:last-child .img{aspect-ratio:4/3}
     .card h3{font-size:30px}
-    .stat{padding:40px 16px}
-    .stat:nth-child(odd){padding-left:0;border-left:0}
-    .stat:nth-child(even){padding-right:0}
+    .stats .wrap{grid-template-columns:1fr}
+    .stat{padding:36px 0;border-left:0;border-top:1px solid var(--line)}
+    .stat:first-child{border-top:0}
     .story .photo .tag{right:12px;bottom:-24px}
     .tech .media{height:340px}
     .gallery-track figure{width:240px;height:290px}
@@ -617,10 +614,9 @@
 <!-- Stats -->
 <section class="stats">
   <div class="wrap">
-    <div class="stat reveal"><div class="n"><span data-count="20">20</span><sup>+</sup></div><p>Years Susan Parker has worked in the practice</p></div>
-    <div class="stat reveal d1"><div class="n"><span data-count="3">3</span>D</div><p>OCT scans of the retina and the layers underneath</p></div>
-    <div class="stat reveal d2"><div class="n">£<span data-count="6.5" data-dec="2">6.50</span></div><p>The monthly starting price of Eyeplan, our eye care plan</p></div>
-    <div class="stat reveal d3"><div class="n">£<span data-count="0">0</span></div><p>For children who need additional imaging</p></div>
+    <div class="stat reveal"><div class="n"><span data-count="3">3</span>D</div><p>OCT scans of the retina and the layers underneath</p></div>
+    <div class="stat reveal d1"><div class="n">£<span data-count="6.5" data-dec="2">6.50</span></div><p>The monthly starting price of Eyeplan, our eye care plan</p></div>
+    <div class="stat reveal d2"><div class="n">£<span data-count="0">0</span></div><p>For children who need additional imaging</p></div>
   </div>
 </section>
 
