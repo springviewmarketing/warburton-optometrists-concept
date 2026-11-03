@@ -107,6 +107,7 @@
   .urgent-bar a:hover{transform:translateY(-2px)}
 
   /* Marquee */
+  .marquee-clip{overflow:hidden;padding:24px 0;margin:-24px 0;position:relative;z-index:2}
   .marquee{background:var(--yellow);border-top:1.5px solid var(--ink);border-bottom:1.5px solid var(--ink);overflow:hidden;padding:22px 0;transform:rotate(-1.2deg);margin:0 -20px;position:relative;z-index:2}
   .marquee-track{display:flex;width:max-content;animation:marquee 38s linear infinite}
   .marquee:hover .marquee-track{animation-play-state:paused}
@@ -512,6 +513,7 @@
 </section>
 
 <!-- Scrolling banner -->
+<div class="marquee-clip">
 <div class="marquee" aria-label="OCT 3D scans, NHS sight tests, contact lenses, myopia control, urgent eye care, glasses and sunglasses, Stockport">
   <div class="marquee-track" aria-hidden="true">
     <div class="marquee-group">
@@ -533,6 +535,7 @@
       <div class="marquee-item">Stockport <svg class="star"><use href="#star"/></svg></div>
     </div>
   </div>
+</div>
 </div>
 
 <!-- Welcome -->
