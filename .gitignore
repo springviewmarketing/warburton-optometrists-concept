@@ -1,0 +1,5 @@
+# Only publish the images the page uses (the stock header photo and favicon stay local)
+images/site-header.jpg
+images/favicon.ico
+*.png.preview
+preview-*.png
