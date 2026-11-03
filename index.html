@@ -107,7 +107,8 @@
   .urgent-bar a:hover{transform:translateY(-2px)}
 
   /* Marquee */
-  .marquee-clip{overflow:hidden;padding:24px 0;margin:-24px 0;position:relative;z-index:2}
+  .marquee-clip{overflow:hidden;padding:44px 0;margin:-44px 0;position:relative;z-index:2;pointer-events:none}
+  .marquee{pointer-events:auto}
   .marquee{background:var(--yellow);border-top:1.5px solid var(--ink);border-bottom:1.5px solid var(--ink);overflow:hidden;padding:22px 0;transform:rotate(-1.2deg);margin:0 -20px;position:relative;z-index:2}
   .marquee-track{display:flex;width:max-content;animation:marquee 38s linear infinite}
   .marquee:hover .marquee-track{animation-play-state:paused}
